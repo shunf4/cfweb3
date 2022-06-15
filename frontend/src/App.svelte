@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
   import Contract from "./CFNFT.json";
 
-  const CONTRACT_ID = "0x290422EC6eADc2CC12aCd98C50333720382CA86B";
+  const CONTRACT_ID = "0x9FB4aE4F5C848f3d85CFEDc3Ee4776Fdae51ADAd";
   const ethereum = window.ethereum;
 
   let chain, provider, signer, contract, contractWithSigner;
@@ -127,13 +127,13 @@
   </ul>
 </header>
 
-{#if chain === "4"}
+{#if chain === "3"}
   <div class="warning">
-    This marketplace is connected to the Rinkeby test network.
+    This marketplace is connected to the Ropsten test network.
   </div>
 {:else}
   <div class="error">
-    This application requires you to be on the Rinkeby network. Use Metamask to
+    This application requires you to be on the Ropsten network. Use Metamask to
     switch networks.
   </div>
 {/if}

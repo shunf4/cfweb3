@@ -10,9 +10,9 @@ async function main() {
   const signer = pk ? new hre.ethers.Wallet(pk, hre.ethers.provider) : owner
 
   const contract = CFNFT.connect(signer);
-  await contract.startSale()
+  await contract.pauseSale()
 
-  console.log("Started sale");
+  console.log("Paused sale");
 }
 
 main()
